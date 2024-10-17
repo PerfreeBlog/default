@@ -56,14 +56,14 @@
         <div class="d-switch-article-box">
             #preArticle()
                 #if(preArticle)
-                    <a class="d-pre-article" href="/article/#(preArticle.slug)" title="#(preArticle.title)">
+                    <a class="d-pre-article" href="#(preArticle.url)" title="#(preArticle.title)">
                         <i class="fa-solid fa-arrow-left"></i> #(preArticle.title)
                     </a>
                 #end
             #end
             #nextArticle()
                 #if(nextArticle)
-                    <a class="d-next-article" href="/article/#(nextArticle.slug)" title="#(nextArticle.title)">
+                    <a class="d-next-article" href="#(nextArticle.url)" title="#(nextArticle.title)">
                         #(nextArticle.title) <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 #end

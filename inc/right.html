@@ -25,7 +25,7 @@
                         <ul>
                             #for(category: categories)
                                 <li class="d-category-item wow fadeInUp" data-wow-duration="#(for.count * 0.1)s">
-                                    <a href="/category/#(category.slug)">#(category.name ??)</a> <span>#(category.count ??)</span>
+                                    <a href="#(category.url)">#(category.name ??)</a> <span>#(category.count ??)</span>
                                 </li>
                             #end
                         </ul>
@@ -40,7 +40,7 @@
                     <ul class="wow fadeInUp" data-wow-duration="0.4s">
                         #for(tag : tags)
                             <li class="d-tag-item" tagColor="#(tag.color??)">
-                                <a href="/tag/#(tag.slug)" title="共#(tag.articleCount ??)篇文章">#(tag.name??)</a>
+                                <a href="#(tag.url)" title="共#(tag.articleCount ??)篇文章">#(tag.name??)</a>
                             </li>
                         #end
                     </ul>

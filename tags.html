@@ -18,7 +18,7 @@
                 <ul class="wow fadeInUp" data-wow-duration="0.4s">
                     #for(tag: tagsPage.data)
                         <li class="d-tag-item" tagColor="#(tag.color??)">
-                            <a href="/tag/#(tag.slug)" title="共#(tag.articleCount ??)篇文章">
+                            <a href="#(tag.url)" title="共#(tag.articleCount ??)篇文章">
                                 <span class="tag-name">#(tag.name??)</span>
                                <span class="tag-count"> #(tag.articleCount ??)</span>
                             </a>

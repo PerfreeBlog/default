@@ -34,11 +34,7 @@
 <section class="d-container">
     <section class="d-article-container">
         <article class='d-article-content #if(article.contentModel == "html") ck-content #end' id="d-article-content">
-            #if(article.contentModel == "html")
-                #(article.content ??)
-            #else
-                #mdToHtml(article.content ??)
-            #end
+            #(article.parseContent ??)
             <div class="greatBox">
                   <span class="like-btn" data-id="#(article.id)">
                     <i class="fa-regular fa-heart"></i> #(article.greatCount ??)
